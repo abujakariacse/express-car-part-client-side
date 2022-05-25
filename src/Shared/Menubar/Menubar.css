@@ -1,0 +1,19 @@
+.bg-business{
+    background-image: url('../../Images//business.png');
+    background-size: cover;
+}
+
+.carMargin{
+    margin-bottom: -80px;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .mx-12{
+        margin: 0px;
+    }
+    .business{
+        display: none;
+    }
+}

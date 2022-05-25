@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+    .mx-12{
+        margin: 0px;
+    }
+    .mt-24{
+        margin: 20px;
+    }
+
+    .bg-Testimonial{
+        margin-top: 60px;
+    }
+
+    .tasty{
+        margin-top: 80px;
+    }
+}
