@@ -13,8 +13,8 @@ const Testimonial = ({ review }) => {
                         <figure><img src={img} alt="" /></figure>
                     </div>
                 </div>
-                <div className="card-body">
-                    <p className='text-sm'><i className="fa-solid fa-quote-left text-sm"></i> {description} <i className="fa-solid fa-quote-right text-sm"></i></p>
+                <div className="card-body" style={{ height: '150px' }}>
+                    <p className='text-sm'><i className="fa-solid fa-quote-left text-xs"></i> {description} <i className="fa-solid fa-quote-right text-xs"></i></p>
                     <p className=''>Ratings: <span className='text-secondary font-bold'>{rating}</span> <i className="fa-solid fa-star text-warning text-sm"></i></p>
                 </div>
             </div>

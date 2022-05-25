@@ -12,7 +12,7 @@ const Reviews = () => {
 
 
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-10'>
-                    <div className="card w-96 shadow-md mt-10">
+                    <div className="card w-96 shadow-lg mt-10" style={{ height: '450px' }}>
                         <figure><img src={picture} alt="Shoes" /></figure>
                         <div className='flex'>
                             <div>
@@ -31,7 +31,7 @@ const Reviews = () => {
                         </div>
                     </div>
 
-                    <div className="card w-96 shadow-md mt-10">
+                    <div className="card w-96 shadow-md mt-10" style={{ height: '450px' }}>
                         <figure><img src={picture2} alt="Shoes" /></figure>
                         <div className='flex'>
                             <div>
@@ -42,7 +42,7 @@ const Reviews = () => {
                                     Auto Responder!
                                     <div className="badge badge-secondary">Hurray!!</div>
                                 </h2>
-                                <p>We have a virtual assistant who can help you anytime. You also can contact with you to know about anything about us</p>
+                                <p>We have a virtual assistant who can help you anytime. </p>
                                 <div className="card-actions justify-end">
                                     <button className="text-indigo-500 font-bold">See More <span className='text-green-500'><i className="fa-solid fa-circle-arrow-right"></i></span></button>
                                 </div>
@@ -50,7 +50,7 @@ const Reviews = () => {
                         </div>
                     </div>
 
-                    <div className="card w-96 bg-base-100 shadow-md mt-10">
+                    <div className="card w-96 bg-base-100 shadow-md mt-10" style={{ height: '450px' }}>
                         <figure><img src={picture3} alt="Shoes" /></figure>
                         <div className='flex'>
                             <div>
@@ -61,7 +61,7 @@ const Reviews = () => {
                                     Home Delivery!
                                     <div className="badge badge-secondary">YUMMY!!</div>
                                 </h2>
-                                <p>We provide home delivery within low cost. In the city area we provide free home delivery.</p>
+                                <p>In the city area we provide home delivery at low cost with 100% Gurranted. </p>
                                 <div className="card-actions justify-end">
                                     <button className="text-indigo-500 font-bold">See More <span className='text-green-500'><i className="fa-solid fa-circle-arrow-right"></i></span></button>
                                 </div>

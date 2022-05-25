@@ -3,7 +3,7 @@ import carParts from '../../Images/CarParts.jpg'
 
 const HomePage = () => {
     return (
-        <div className="hero min-h-screen">
+        <div className="hero lg:min-h-screen ">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={carParts} alt="" className='rounded' />
                 <div>
