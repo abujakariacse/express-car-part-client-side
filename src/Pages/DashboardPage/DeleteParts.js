@@ -5,7 +5,7 @@ import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 const DeleteParts = ({ product, index, refetch }) => {
-    const { _id, name, price, minQuantity, avaiQuantity, image } = product;
+    const { _id, name, price, image } = product;
 
     const handleDelete = () => {
         confirmAlert({

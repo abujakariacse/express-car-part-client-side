@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
@@ -10,14 +9,13 @@ const PurchasePage = () => {
     const { id } = useParams();
     const [parts, setParts] = useState({});
     const { name, price, minQuantity, avaiQuantity } = parts
-    const { register, formState: { errors }, handleSubmit } = useForm();
 
     const [quantity, setQuantity] = useState(50)
     useEffect(() => {
         fetch(`https://tranquil-atoll-94880.herokuapp.com/carParts/${id}`)
             .then(res => res.json())
             .then(data => setParts(data));
-    }, [parts])
+    }, [id])
 
 
     const addressRef = useRef('')
@@ -65,7 +63,8 @@ const PurchasePage = () => {
 
     return (
         <div>
-            <h2 className='text-indigo-500 text-center text-3xl mt-6'>Your CarParts Order Now <br /><span className='text-green-500 font-bold'>{name}</span></h2>
+            <h2 className='text-indigo-500 text-center text-3xl mt-6'>Your CarParts Order Now <br />
+                <span className='text-green-500 '>{name}</span></h2>
             <form onSubmit={handleOrder} className='flex justify-center items-center flex-col mt-4'>
                 <div>
                     <label className="label">

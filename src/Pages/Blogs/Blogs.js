@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { toast } from 'react-toastify';
 
 const Blogs = () => {
     const [foundProduct, setFoundProduct] = useState({})
@@ -15,7 +14,7 @@ const Blogs = () => {
         e.preventDefault()
         const SearchText = e.target.product.value;
         console.log(SearchText)
-        products.find(product => {
+        products.map(product => {
 
             if (product.name === SearchText) {
                 setFoundProduct(product)
@@ -34,7 +33,7 @@ const Blogs = () => {
                     3. Use custom hook to avoid code repeating. <br />
                     4. Use lazy loading images in React. <br />
                     5. Dependency optimization on UseEffect. <br />
-                    6. Avoid using Index number as Key for map & use an unique id or number for Key. <br />
+                    6. Avoid using Index number as Key for map and use an unique id or number for Key. <br />
                     7. Spreading props on DOM elements could be optimize react application. <br />
                     8. USe CSS Animations Instead of JS Animations. Like AOS, Animate.css etc library. <br />
                     9. Consider Server-side Rendering.</p>

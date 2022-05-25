@@ -7,7 +7,7 @@ const ReviewPage = () => {
         fetch(`https://tranquil-atoll-94880.herokuapp.com/review`)
             .then(res => res.json())
             .then(data => setReviews(data))
-    }, [])
+    }, [reviews])
     return (
         <div className='font-mono'>
             <h2 className='text-primary text-3xl text-center mt-24 font-bold'>Client's Review About Us</h2>
