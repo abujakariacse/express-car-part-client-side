@@ -5,14 +5,14 @@ import picture3 from '../../Images/Fast.jpg';
 
 const Reviews = () => {
     return (
-        <div>
+        <div className='w-11/12 mx-auto'>
             <div className='mx-12 mt-16 mb-10'>
                 <h1 className='text-4xl font-bold text-primary text-center'>Why do choose us</h1>
                 <p className='mt-4 text-center text-xl font-bold'>This is the best Car parts Company.<br />100% Original parts.</p>
 
 
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-10'>
-                    <div className="card w-96 bg-base-100 shadow-md mt-10">
+                    <div className="card w-96 shadow-md mt-10">
                         <figure><img src={picture} alt="Shoes" /></figure>
                         <div className='flex'>
                             <div>
@@ -31,7 +31,7 @@ const Reviews = () => {
                         </div>
                     </div>
 
-                    <div className="card w-96 bg-base-100 shadow-md mt-10">
+                    <div className="card w-96 shadow-md mt-10">
                         <figure><img src={picture2} alt="Shoes" /></figure>
                         <div className='flex'>
                             <div>

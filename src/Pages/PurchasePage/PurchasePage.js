@@ -9,7 +9,7 @@ const PurchasePage = () => {
     const [user] = useAuthState(auth);
     const { id } = useParams();
     const [parts, setParts] = useState({});
-    const { name, description, image, price, minQuantity, avaiQuantity } = parts
+    const { name, price, minQuantity, avaiQuantity } = parts
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const [quantity, setQuantity] = useState(50)

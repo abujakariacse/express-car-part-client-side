@@ -3,8 +3,8 @@ import React from 'react';
 const Business = () => {
     return (
         <div className='mt-16 bg-business p-10'>
-            <h2 className='text-center text-primary text-5xl uppercase'>Millions Business Trust Us</h2>
-            <p className='text-center text-3xl mt-4'> Try to understand users expectation</p>
+            <h2 className='text-center text-primary text-5xl uppercase font-bold'>Millions Business Trust Us</h2>
+            <p className='text-center text-3xl mt-4 text-gray-500'> Try to understand users expectation</p>
             <div className='grid lg:grid-cols-4 grid-col-1 mt-10 gap-24'>
                 <div className='flex items-center flex-col '>
                     <p className='text-5xl'>50+</p>
