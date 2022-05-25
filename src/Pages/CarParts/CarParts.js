@@ -10,7 +10,7 @@ const CarParts = () => {
     }, [])
     return (
         <div>
-            <h2 className='text-center text-3xl font-bold text-primary underline'>Vehicles Parts</h2>
+            <h2 className='text-center text-3xl font-bold text-secondary mb-10'>Vehicles Parts</h2>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-x-10 gap-y-4 mx-12'>
                 {
                     parts.map(part => <Parts

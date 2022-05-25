@@ -9,7 +9,7 @@ const Parts = ({ part }) => {
     }
     return (
         <div className='mt-10'>
-            <div className="card w-96  shadow-lg">
+            <div className="card w-96 shadow-xl mx-auto">
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
@@ -20,7 +20,7 @@ const Parts = ({ part }) => {
                     <p className='font-bold'>Minimum quantity: <span className='text-indigo-500'>{minQuantity} </span></p>
                     <p className='font-bold'>Available Quantity: <span className='text-indigo-500'>{avaiQuantity}</span></p>
                     <div className="card-actions">
-                        <button onClick={() => handlePurchase(_id)} className="btn-primary rounded px-6 py-2">Buy Now<i className="fa-solid fa-cart-shopping ml-2"></i></button>
+                        <button onClick={() => handlePurchase(_id)} className="btn-primary rounded px-6 py-2 text-white font-bold">Buy Now<i className="fa-solid fa-cart-shopping ml-2"></i></button>
                     </div>
                 </div>
             </div>
