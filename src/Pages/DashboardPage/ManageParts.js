@@ -6,7 +6,7 @@ import Loading from '../../Shared/Loading/Loading'
 import DeleteParts from './DeleteParts';
 
 const ManageParts = () => {
-    const { data: products, isLoading, refetch } = useQuery('product', () => fetch('http://localhost:5000/CarParts', {
+    const { data: products, isLoading, refetch } = useQuery('product', () => fetch('https://tranquil-atoll-94880.herokuapp.com/CarParts', {
         method: "GET",
     }).then(res => res.json()))
     if (isLoading) {

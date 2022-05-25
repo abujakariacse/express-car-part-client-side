@@ -14,7 +14,7 @@ const PurchasePage = () => {
 
     const [quantity, setQuantity] = useState(50)
     useEffect(() => {
-        fetch(`http://localhost:5000/carParts/${id}`)
+        fetch(`https://tranquil-atoll-94880.herokuapp.com/carParts/${id}`)
             .then(res => res.json())
             .then(data => setParts(data));
     }, [parts])
@@ -34,7 +34,7 @@ const PurchasePage = () => {
         const price = e.target.price.value
         const addOrder = { name, email, quantity, phone, address, price }
 
-        fetch('http://localhost:5000/myOrder', {
+        fetch('https://tranquil-atoll-94880.herokuapp.com/myOrder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

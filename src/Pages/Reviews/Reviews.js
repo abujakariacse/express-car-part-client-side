@@ -23,7 +23,7 @@ const Reviews = () => {
                                     Fast Delivery!
                                     <div className="badge badge-secondary">YAY!!</div>
                                 </h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci eaque, eius quidem error incidunt.</p>
+                                <p>We can try to deliver our product to the customer as soon as possible</p>
                                 <div className="card-actions justify-end">
                                     <button className="text-indigo-500 font-bold">See More <span className='text-green-500'><i className="fa-solid fa-circle-arrow-right"></i></span></button>
                                 </div>
@@ -42,7 +42,7 @@ const Reviews = () => {
                                     Auto Responder!
                                     <div className="badge badge-secondary">Hurray!!</div>
                                 </h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci eaque, eius quidem error incidunt.</p>
+                                <p>We have a virtual assistant who can help you anytime. You also can contact with you to know about anything about us</p>
                                 <div className="card-actions justify-end">
                                     <button className="text-indigo-500 font-bold">See More <span className='text-green-500'><i className="fa-solid fa-circle-arrow-right"></i></span></button>
                                 </div>
@@ -61,7 +61,7 @@ const Reviews = () => {
                                     Home Delivery!
                                     <div className="badge badge-secondary">YUMMY!!</div>
                                 </h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci eaque, eius quidem error incidunt.</p>
+                                <p>We provide home delivery within low cost. In the city area we provide free home delivery.</p>
                                 <div className="card-actions justify-end">
                                     <button className="text-indigo-500 font-bold">See More <span className='text-green-500'><i className="fa-solid fa-circle-arrow-right"></i></span></button>
                                 </div>

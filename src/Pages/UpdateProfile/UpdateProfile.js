@@ -18,7 +18,7 @@ const UpdateProfile = () => {
         const updateProfile = { education, location, phone, linkedIn, github, img }
 
 
-        const url = `http://localhost:5000/myProfile?email=${user.email}`;
+        const url = `https://tranquil-atoll-94880.herokuapp.com/myProfile?email=${user.email}`;
         fetch(url, {
             method: 'PUT',
             headers: {

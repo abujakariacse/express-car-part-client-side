@@ -11,7 +11,7 @@ const MyProfile = () => {
     const navigate = useNavigate()
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/myProfile?email=${user.email}`, {
+            fetch(`https://tranquil-atoll-94880.herokuapp.com/myProfile?email=${user.email}`, {
                 method: "GET",
                 headers: {
                     "authorization": `Bearer ${localStorage.getItem('accessToken')}`

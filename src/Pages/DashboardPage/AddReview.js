@@ -18,7 +18,7 @@ const AddReview = () => {
 
         const addReview = { name, img, description, address, rating }
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://tranquil-atoll-94880.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

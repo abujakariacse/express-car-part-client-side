@@ -13,7 +13,7 @@ const MyOrder = () => {
     const navigate = useNavigate()
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/myOrder?email=${user.email}`, {
+            fetch(`https://tranquil-atoll-94880.herokuapp.com/myOrder?email=${user.email}`, {
                 method: "GET",
                 headers: {
                     "authorization": `Bearer ${localStorage.getItem('accessToken')}`
@@ -41,7 +41,7 @@ const MyOrder = () => {
                 {
                     label: 'Yes',
                     onClick: () => {
-                        const url = `http://localhost:5000/myOrder/${id}`;
+                        const url = `https://tranquil-atoll-94880.herokuapp.com/myOrder/${id}`;
                         fetch(url, {
                             method: 'DELETE'
                         })

@@ -15,7 +15,7 @@ const DeleteParts = ({ product, index, refetch }) => {
                 {
                     label: 'Yes',
                     onClick: () => {
-                        fetch(`http://localhost:5000/CarParts/${_id}`, {
+                        fetch(`https://tranquil-atoll-94880.herokuapp.com/CarParts/${_id}`, {
                             method: 'DELETE',
                             headers: {
                                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
