@@ -10,7 +10,7 @@ const HomePage = () => {
                     <h1 className="text-5xl font-bold text-gray-600">The World Best Car Parts</h1>
                     <p className="py-6 text-justify text-gray-500">An car has several numbers of parts. But there are four essential Parts of an car. These are: The Chassis.The Engine.Transmission System.Body.
                     </p>
-                    <button className="btn btn-primary text-white font-bold">Get Started</button>
+                    <button className="btn btn-primary text-white font-boldgi">Get Started</button>
                 </div>
             </div>
         </div>
