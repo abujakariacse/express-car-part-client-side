@@ -1,14 +1,14 @@
 import React from 'react';
 import picture from '../../Images/HomeDelivery.jpg';
-import picture2 from '../../Images/auto.webp'
-import picture3 from '../../Images/Fast.jpg'
+import picture2 from '../../Images/auto.jpg';
+import picture3 from '../../Images/Fast.jpg';
 
 const Reviews = () => {
     return (
         <div>
             <div className='mx-12 mt-16 mb-10'>
-                <h1 className='text-4xl font-bold text-primary'>Why do choose us</h1>
-                <p className='mt-4'>This is the best Car parts Company.<br />100% Original parts.</p>
+                <h1 className='text-4xl font-bold text-primary text-center'>Why do choose us</h1>
+                <p className='mt-4 text-center text-xl font-bold'>This is the best Car parts Company.<br />100% Original parts.</p>
 
 
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-10'>
