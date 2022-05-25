@@ -9,7 +9,7 @@ const Parts = ({ part }) => {
     }
     return (
         <div className='mt-10'>
-            <div className="card w-96 bg-base-100 shadow-md">
+            <div className="card w-96  shadow-lg">
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>

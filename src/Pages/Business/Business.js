@@ -23,7 +23,7 @@ const Business = () => {
                     <p className='text-2xl text-secondary'>Feedbacks <i className="fa-solid fa-thumbs-up"></i></p>
                 </div>
             </div>
-            <div className='flex items-center justify-between shadow-md border p-8 mt-10 bg-info text-white rounded business'>
+            <div className='flex items-center justify-between shadow-md border p-8 mt-20 bg-info text-white rounded business w-2/3 mx-auto '>
                 <div>
                     <h2 className='text-3xl'>Have any question about us or get a products request.?</h2>
                     <p className='text-2xl'>Don't hesitate to contact us</p>
