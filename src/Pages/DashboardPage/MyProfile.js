@@ -30,7 +30,7 @@ const MyProfile = () => {
 
     return (
         <div>
-            <h2 className='text-center text-primary text-3xl'>My Profile</h2>
+            <h2 className='text-center text-primary text-3xl font-serif'>My Profile</h2>
             <div className='mt-10'>
                 {
                     profiles.map(profile => <Profile
@@ -41,7 +41,9 @@ const MyProfile = () => {
                 }
             </div>
             <div className='flex justify-center'>
-                <Link to='/addProfile'><button className='bg-primary px-4 py-2 text-white rounded mt-4'>Add Profile</button></Link>
+                {
+                    profiles[0]?.phone ? '' : <Link to='/addProfile'><button className='bg-primary px-4 py-2 text-white rounded mt-4'>Add Profile</button></Link>
+                }
             </div>
 
         </div>

@@ -16,7 +16,7 @@ const Profile = ({ profile }) => {
                         <img src={img} alt="" />
                     </div>
                 </div>
-                <div className="card-body ml-12">
+                <div className="card-body ml-12 font-serif">
                     <h2 className="card-title text-3xl">Name: {user.displayName}</h2>
                     <p><span className='font-bold'>Email:</span> {user.email}</p>
                     <p><span className='font-bold'>Education:</span> {education}</p>
