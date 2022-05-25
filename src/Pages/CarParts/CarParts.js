@@ -7,7 +7,7 @@ const CarParts = () => {
         fetch(`https://tranquil-atoll-94880.herokuapp.com/carParts`)
             .then(res => res.json())
             .then(data => setParts(data))
-    }, [])
+    }, [parts])
     return (
         <div>
             <h2 className='text-center text-3xl font-bold text-secondary mb-5'>Vehicles Parts :-</h2>

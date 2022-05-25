@@ -9,13 +9,13 @@ const Parts = ({ part }) => {
     }
     return (
         <div className='mt-10'>
-            <div className="card w-96 shadow-xl mx-auto">
+            <div className="card container w-96 shadow-lg mx-auto">
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
-                <div className="card-body">
-                    <h2 className="card-title font-bold text-2xl text-indigo-400">{name}</h2>
-                    <p>{description}</p>
+                <div className="card-body font-serif">
+                    <h2 className="card-title text-secondary font-bold text-xl">{name.slice(0, 20)}</h2>
+                    <p className='text-gray-500'>{description}</p>
                     <p className='font-bold'>Per Price: <span className='text-indigo-500'>${price}</span></p>
                     <p className='font-bold'>Minimum quantity: <span className='text-indigo-500'>{minQuantity} </span></p>
                     <p className='font-bold'>Available Quantity: <span className='text-indigo-500'>{avaiQuantity}</span></p>

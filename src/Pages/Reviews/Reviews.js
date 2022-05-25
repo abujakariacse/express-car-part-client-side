@@ -5,9 +5,9 @@ import picture3 from '../../Images/Fast.jpg';
 
 const Reviews = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto font-mono'>
             <div className='mx-12 mt-16 mb-10'>
-                <h1 className='text-4xl font-bold text-primary text-center'>Why do choose us</h1>
+                <h1 className='text-4xl font-bold text-primary text-center'>Why do you choose us?</h1>
                 <p className='mt-4 text-center text-xl font-bold'>This is the best Car parts Company.<br />100% Original parts.</p>
 
 

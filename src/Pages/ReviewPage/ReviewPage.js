@@ -9,7 +9,7 @@ const ReviewPage = () => {
             .then(data => setReviews(data))
     }, [])
     return (
-        <div>
+        <div className='font-mono'>
             <h2 className='text-primary text-3xl text-center mt-24 font-bold'>Client's Review About Us</h2>
             <h2 className='text-gray-900 text-lg text-center mt-3'>Please add a review on Dashboard to see on the home page</h2>
             <div className='grid lg:grid-cols-3 grid-cols-1 mx-12'>
