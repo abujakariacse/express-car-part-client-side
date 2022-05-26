@@ -13,7 +13,7 @@ const Parts = ({ part }) => {
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
-                <div className="card-body font-serif">
+                <div className="card-body font-serif" style={{ height: '350px' }}>
                     <h2 className="card-title text-secondary font-bold text-xl">{name}</h2>
                     <p className='text-gray-500'>{description}</p>
                     <p className='font-bold'>Per Price: <span className='text-indigo-500'>${price}</span></p>
