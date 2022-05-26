@@ -14,7 +14,7 @@ const Parts = ({ part }) => {
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body font-serif">
-                    <h2 className="card-title text-secondary font-bold text-xl">{name.slice(0, 20)}</h2>
+                    <h2 className="card-title text-secondary font-bold text-xl">{name}</h2>
                     <p className='text-gray-500'>{description}</p>
                     <p className='font-bold'>Per Price: <span className='text-indigo-500'>${price}</span></p>
                     <p className='font-bold'>Minimum quantity: <span className='text-indigo-500'>{minQuantity} </span></p>
