@@ -8,7 +8,7 @@ const PurchasePage = () => {
     const [user] = useAuthState(auth);
     const { id } = useParams();
     const [parts, setParts] = useState({});
-    const { name, price, minQuantity, avaiQuantity } = parts
+    const { name, price, minQuantity, avaiQuantity, image, description } = parts
 
     const [quantity, setQuantity] = useState(50)
     useEffect(() => {
@@ -63,9 +63,20 @@ const PurchasePage = () => {
 
     return (
         <div>
-            <h2 className='text-indigo-500 text-center text-3xl mt-6'>Your CarParts Order Now <br />
-                <span className='text-green-500 '>{name}</span></h2>
-            <form onSubmit={handleOrder} className='flex justify-center items-center flex-col mt-4'>
+            <div className="card container w-96 shadow-lg mx-auto">
+                <figure className="px-10 pt-10">
+                    <img src={image} alt="Shoes" className="rounded-xl" />
+                </figure>
+                <div className="card-body font-serif">
+                    <h2 className="card-title text-secondary font-bold text-xl">{name.slice(0, 20)}</h2>
+                    <p className='text-gray-500'>{description}</p>
+                    <p className='font-bold'>Per Price: <span className='text-indigo-500'>${price}</span></p>
+                    <p className='font-bold'>Minimum quantity: <span className='text-indigo-500'>{minQuantity} </span></p>
+                    <p className='font-bold'>Available Quantity: <span className='text-indigo-500'>{avaiQuantity}</span></p>
+                </div>
+            </div>
+            <h2 className='text-indigo-500 text-center text-3xl mt-6'>Your CarParts Order Now</h2><br />
+            <form onSubmit={handleOrder} className='flex justify-center items-center flex-col mt-2'>
                 <div>
                     <label className="label">
                         <span className="label-text">Name</span>
